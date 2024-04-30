@@ -65,7 +65,7 @@
                 android:layout_marginTop="10dp"
                 android:background="@drawable/cuadrotexto"
                 android:paddingLeft="20dp"
-                android:textColor = "@color/black"
+                android:textColor="@color/black"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/textView2" />
@@ -110,11 +110,11 @@
                 android:layout_marginTop="10dp"
                 android:background="@drawable/cuadrotexto"
                 android:hint="Ingrese su presion arterial en reposo"
+                android:inputType="number"
                 android:paddingLeft="20dp"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/textView4"
-                android:inputType="number"/>
+                app:layout_constraintTop_toBottomOf="@id/textView4" />
 
             <TextView
                 android:id="@+id/textView5"
@@ -134,11 +134,11 @@
                 android:layout_marginTop="10dp"
                 android:background="@drawable/cuadrotexto"
                 android:hint="Ingrese su colesterol en sangre"
+                android:inputType="number"
                 android:paddingLeft="20dp"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/textView5"
-                android:inputType="number"/>
+                app:layout_constraintTop_toBottomOf="@id/textView5" />
 
             <TextView
                 android:id="@+id/textView6"
@@ -201,12 +201,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/cuadrotexto"
-                android:paddingLeft="20dp"
                 android:hint="Ingrese su frecuencia cardiaca maxima"
+                android:inputType="number"
+                android:paddingLeft="20dp"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/textView8"
-                android:inputType="number"/>
+                app:layout_constraintTop_toBottomOf="@id/textView8" />
 
             <TextView
                 android:id="@+id/textView9"
@@ -248,11 +248,11 @@
                 android:layout_marginTop="10dp"
                 android:background="@drawable/cuadrotexto"
                 android:hint="  Ingrese la depresion en el segmento ST"
+                android:inputType="numberDecimal"
                 android:paddingLeft="20dp"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/textView10"
-                android:inputType="numberDecimal"/>
+                app:layout_constraintTop_toBottomOf="@id/textView10" />
 
             <TextView
                 android:id="@+id/textView11"
@@ -292,50 +292,54 @@
 
     </ScrollView>
 
-    <ImageButton
-        android:id="@+id/Sirena"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
         android:layout_width="0dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="45dp"
-        android:background="#00FFFFFF"
-        android:elevation="1dp"
-        android:src="@drawable/sirena"
-        app:layout_constraintEnd_toEndOf="@+id/Barra"
-        app:layout_constraintTop_toTopOf="@+id/Barra" />
-
-    <ImageButton
-        android:id="@+id/casa"
-        android:layout_width="72dp"
-        android:layout_height="46dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="8dp"
-        android:background="#00FFFFFF"
-        android:elevation="1dp"
-        android:src="@drawable/casa"
-        app:layout_constraintStart_toStartOf="@+id/Barra"
-        app:layout_constraintTop_toTopOf="@+id/Barra" />
-
-    <ImageButton
-        android:id="@+id/Agregar"
-        style="@style/Widget.AppCompat.ImageButton"
-        android:layout_width="0dp"
-        android:layout_height="91dp"
-        android:layout_marginEnd="132dp"
-        android:layout_marginBottom="28dp"
-        android:background="#00FFFFFF"
-        android:elevation="1dp"
-        android:src="@drawable/group_33739"
-        app:layout_constraintBottom_toBottomOf="@+id/Barra"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <ImageView
-        android:id="@+id/Barra"
-        android:layout_width="411dp"
-        android:layout_height="66dp"
-        android:layout_marginStart="2dp"
-        android:src="@drawable/rectangle_4239"
+        android:layout_height="100dp"
+        android:background="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <ImageButton
+            android:id="@+id/Sirena"
+            android:layout_width="0dp"
+            android:layout_height="46dp"
+            android:layout_marginEnd="50dp"
+            android:background="#00FFFFFF"
+            android:elevation="1dp"
+            android:src="@drawable/sirena"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/casa"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="50dp"
+            android:background="#00FFFFFF"
+            android:elevation="1dp"
+            android:src="@drawable/casa"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/Agregar"
+            style="@style/Widget.AppCompat.ImageButton"
+            android:layout_width="0dp"
+            android:layout_height="91dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:background="#00FFFFFF"
+            android:elevation="1dp"
+            android:src="@drawable/group_33739"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/Sirena"
+            app:layout_constraintStart_toEndOf="@+id/casa"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

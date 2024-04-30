@@ -42,6 +42,13 @@ class modeloCardiaco : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val sirena: ImageButton = findViewById<ImageButton>(R.id.Sirena)
+
+        sirena.setOnClickListener{
+            val intent = Intent(this, Emergencias::class.java)
+            startActivity(intent)
+        }
+
         val spinner2: Spinner = findViewById(R.id.spinner2)
         val spinner3: Spinner = findViewById(R.id.spinner3)
         val spinner6: Spinner = findViewById(R.id.spinner6)

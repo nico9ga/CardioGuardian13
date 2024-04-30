@@ -8,142 +8,159 @@
     android:background="#BCD6F0"
     tools:context=".Home">
 
+
     <ImageButton
         android:id="@+id/imageButton8"
-        android:layout_width="396dp"
+        android:layout_width="wrap_content"
         android:layout_height="129dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="11dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="40dp"
         android:backgroundTint="#00FFFFFF"
         android:contentDescription="@string/consejos"
         android:src="@drawable/group_33764"
         android:text="@string/concejos"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton7"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="0.881" />
 
     <ImageButton
         android:id="@+id/imageButton7"
-        android:layout_width="396dp"
-        android:layout_height="129dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="216dp"
-        android:layout_marginEnd="11dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="88dp"
         android:backgroundTint="#00FFFFFF"
         android:contentDescription="@string/consejos"
         android:src="@drawable/group_33764"
         android:text="@string/concejos"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="240dp"
+        android:layout_width="0dp"
         android:layout_height="166dp"
-        android:layout_marginTop="56dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="50dp"
         android:contentDescription="@string/cardio"
         android:src="@drawable/group_33759"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="112dp"
+        android:layout_width="0dp"
         android:layout_height="104dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="92dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="50dp"
         android:contentDescription="@string/logo"
+        app:layout_constraintEnd_toStartOf="@+id/imageView4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/group_33758" />
 
     <TextView
         android:id="@+id/TextConsejos"
-        android:layout_width="231dp"
-        android:layout_height="57dp"
-        android:layout_marginStart="88dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
         android:layout_marginBottom="40dp"
         android:autofillHints="Concejoss"
         android:ems="10"
         android:fontFamily="@font/amaranth_bold"
         android:inputType="text"
         android:text="@string/consejos"
-        android:textAlignment="center"
+        android:textAlignment="textStart"
         android:textColor="@color/black"
         android:textSize="50sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/imageButton7"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton7"
+        app:layout_constraintStart_toStartOf="@+id/imageButton7"
+        app:layout_constraintTop_toTopOf="@+id/imageButton7"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="LabelFor" />
 
     <TextView
         android:id="@+id/textNoticias"
-        android:layout_width="231dp"
-        android:layout_height="57dp"
-        android:layout_marginStart="84dp"
-        android:layout_marginBottom="70dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
         android:autofillHints="Concejoss"
         android:ems="10"
         android:fontFamily="@font/amaranth_bold"
         android:inputType="text"
         android:text="Noticias"
-        android:textAlignment="center"
+        android:textAlignment="textEnd"
         android:textColor="@color/black"
         android:textSize="50sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton7"
-        app:layout_constraintStart_toStartOf="@+id/imageButton7"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton8"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton8"
+        app:layout_constraintStart_toStartOf="@+id/imageButton8"
+        app:layout_constraintTop_toTopOf="@+id/imageButton8"
         tools:ignore="LabelFor" />
 
-    <ImageButton
-        android:id="@+id/Sirena"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
         android:layout_width="0dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="45dp"
-        android:background="#00FFFFFF"
-        android:elevation="1dp"
-        android:src="@drawable/sirena"
-        app:layout_constraintEnd_toEndOf="@+id/Barra"
-        app:layout_constraintTop_toTopOf="@+id/Barra" />
-
-    <ImageButton
-        android:id="@+id/casa"
-        android:layout_width="72dp"
-        android:layout_height="46dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="8dp"
-        android:background="#00FFFFFF"
-        android:elevation="1dp"
-        android:src="@drawable/casa"
-        app:layout_constraintStart_toStartOf="@+id/Barra"
-        app:layout_constraintTop_toTopOf="@+id/Barra" />
-
-    <ImageButton
-        android:id="@+id/Agregar"
-        style="@style/Widget.AppCompat.ImageButton"
-        android:layout_width="0dp"
-        android:layout_height="91dp"
-        android:layout_marginEnd="132dp"
-        android:layout_marginBottom="28dp"
-        android:background="#00FFFFFF"
-        android:elevation="1dp"
-        android:src="@drawable/group_33739"
-        app:layout_constraintBottom_toBottomOf="@+id/Barra"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <ImageView
-        android:id="@+id/Barra"
-        android:layout_width="411dp"
-        android:layout_height="66dp"
-        android:layout_marginStart="2dp"
-        android:src="@drawable/rectangle_4239"
+        android:layout_height="100dp"
+        android:background="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <ImageButton
+            android:id="@+id/Sirena"
+            android:layout_width="0dp"
+            android:layout_height="46dp"
+            android:layout_marginEnd="50dp"
+            android:background="#00FFFFFF"
+            android:elevation="1dp"
+            android:src="@drawable/sirena"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/casa"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="50dp"
+            android:background="#00FFFFFF"
+            android:elevation="1dp"
+            android:src="@drawable/casa"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/Agregar"
+            style="@style/Widget.AppCompat.ImageButton"
+            android:layout_width="0dp"
+            android:layout_height="91dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:background="#00FFFFFF"
+            android:elevation="1dp"
+            android:src="@drawable/group_33739"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/Sirena"
+            app:layout_constraintStart_toEndOf="@+id/casa"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
