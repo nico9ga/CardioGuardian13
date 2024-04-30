@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "241307248789",
+    "project_id": "cardioguardian-64d8f",
+    "storage_bucket": "cardioguardian-64d8f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:241307248789:android:b79b842394e022cd4b939c",
+        "android_client_info": {
+          "package_name": "com.example.cardioguardian"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVojfiWynFdT38gbOFfKrWyacFAQdhEB0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

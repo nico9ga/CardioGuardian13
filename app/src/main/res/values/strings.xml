@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">CardioGuardian</string>
+    <string name="olvidaste_t_contrase_a">¿Olvidaste tú contraseña?</string>
+    <string name="ingresa_como_invitado">Ingresa como invitado</string>
+    <string name="contrase_a">Contraseña...</string>
+    <string name="email">Email...</string>
+    <string name="inicio_sesi_n">Inicio Sesión</string>
+    <string name="todo">TODO</string>
+    <string name="registro">Registro</string>
+    <string name="logoapple">LogoApple</string>
+    <string name="logogoogle">LogoGoogle</string>
+    <string name="logologo">LogoLogo</string>
+    <string name="title_activity_home">Home</string>
+    <string name="concejos">Concejos</string>
+    <string name="consejos">Consejos</string>
+    <string name="cardio">Cardio</string>
+    <string name="home">Home</string>
+    <string name="barra">Barra</string>
+    <string name="Agregar" />
+    <string name="sirena" />
+    <string name="homee">Homee</string>
+    <string name="logo">Logo</string>
+    <string name="concejos1">Concejos1</string>
+    <string name="Sirena">Sirena</string>
+    <string name="title_activity_concejos">Concejos</string>
+    <string name="login">Login</string>
+    <string name="title_activity_formulario_modelo">formularioModelo</string>
+
+    <string-array name="sexo_array">
+        <item>Seleccione una opción</item>
+        <item>Masculino</item>
+        <item>Femenino</item>
+    </string-array>
+
+    <string-array name="tipodolorpecho_array">
+        <item>Seleccione una opción</item>
+        <item>Angina Típica</item>
+        <item>Angina Atípica</item>
+        <item>Dolor No Anginal</item>
+        <item>Asintomático</item>
+    </string-array>
+
+    <string-array name="azucarensangre_array">
+        <item>Seleccione una opción</item>
+        <item>menos de 120 mg/dl </item>
+        <item>Mayor a 120 mg/dl </item>
+    </string-array>
+
+    <string-array name="electroreposo_array">
+        <item>Seleccione una opción</item>
+        <item>Normal</item>
+        <item>Anormalidad de la onda ST-T</item>
+        <item>LVH: Muestra hipertrofia ventricular izquierda</item>
+    </string-array>
+
+    <string-array name="anginainducida_array">
+        <item>Seleccione una opción</item>
+        <item>No experimente angina </item>
+        <item>Si experimente angina </item>
+    </string-array>
+
+    <string-array name="pendientest_array">
+        <item>Seleccione una opción</item>
+        <item>Ascendente </item>
+        <item>Plano </item>
+        <item>Descendente</item>
+    </string-array>
+
+</resources>
