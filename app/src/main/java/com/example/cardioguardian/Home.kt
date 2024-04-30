@@ -20,13 +20,13 @@ class Home : AppCompatActivity() {
         }
         val modelbuttn: ImageButton = findViewById(R.id.Agregar)
 
-//        // Establecer un OnClickListener en el botón
-////        modelbuttn.setOnClickListener {
-////            // Crear un Intent para iniciar RegisterActivity
-////            val intent = Intent(this, modeloCardiaco::class.java)
-////
-////            // Iniciar RegisterActivity
-////            startActivity(intent)
-//        }
+//      Establecer un OnClickListener en el botón
+        modelbuttn.setOnClickListener {
+            // Crear un Intent para iniciar RegisterActivity
+            val intent = Intent(this, modeloCardiaco::class.java)
+
+            // Iniciar RegisterActivity
+            startActivity(intent)
+        }
     }
 }

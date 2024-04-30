@@ -102,10 +102,10 @@
 
     <ImageButton
         android:id="@+id/Sirena"
-        android:layout_width="72dp"
+        android:layout_width="0dp"
         android:layout_height="46dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="35dp"
+        android:layout_marginEnd="45dp"
         android:background="#00FFFFFF"
         android:elevation="1dp"
         android:src="@drawable/sirena"
@@ -127,9 +127,9 @@
     <ImageButton
         android:id="@+id/Agregar"
         style="@style/Widget.AppCompat.ImageButton"
-        android:layout_width="103dp"
+        android:layout_width="0dp"
         android:layout_height="91dp"
-        android:layout_marginEnd="152dp"
+        android:layout_marginEnd="132dp"
         android:layout_marginBottom="28dp"
         android:background="#00FFFFFF"
         android:elevation="1dp"

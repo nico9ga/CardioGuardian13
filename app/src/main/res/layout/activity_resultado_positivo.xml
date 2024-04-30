@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#82A5FF"
+    tools:context=".resultadoPositivo">
+
+
+    <ImageButton
+        android:id="@+id/Sirena"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="45dp"
+        android:background="#00FFFFFF"
+        android:elevation="1dp"
+        android:src="@drawable/sirena"
+        app:layout_constraintEnd_toEndOf="@+id/Barra"
+        app:layout_constraintTop_toTopOf="@+id/Barra" />
+
+    <ImageButton
+        android:id="@+id/casa"
+        android:layout_width="72dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="8dp"
+        android:background="#00FFFFFF"
+        android:elevation="1dp"
+        android:src="@drawable/casa"
+        app:layout_constraintStart_toStartOf="@+id/Barra"
+        app:layout_constraintTop_toTopOf="@+id/Barra" />
+
+    <ImageButton
+        android:id="@+id/Agregar"
+        style="@style/Widget.AppCompat.ImageButton"
+        android:layout_width="0dp"
+        android:layout_height="91dp"
+        android:layout_marginEnd="132dp"
+        android:layout_marginBottom="28dp"
+        android:background="#00FFFFFF"
+        android:elevation="1dp"
+        android:src="@drawable/group_33739"
+        app:layout_constraintBottom_toBottomOf="@+id/Barra"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/Barra"
+        android:layout_width="411dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="2dp"
+        android:src="@drawable/rectangle_4239"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="393dp"
+        android:layout_height="347dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="53dp"
+        android:background="@drawable/group_33764"
+        android:backgroundTint="#BAFFFFFF"
+        android:fontFamily="@font/archivo_bold"
+        android:paddingTop="20dp"
+        android:text="Ten cuidado, tu estado de salud puede estar en riesgo, se recomienda visitar un medico, tenga en cuenta que esto no es 100% preciso y puede fallar, el unico que lo puede diagnosticar es un medico certificado."
+        android:textAlignment="center"
+        android:textColor="#E10000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/Agregar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="86dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="292dp"
+        android:layout_marginTop="59dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="74dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/group_33758" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

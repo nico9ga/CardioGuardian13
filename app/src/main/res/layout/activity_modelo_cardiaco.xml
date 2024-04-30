@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#82A5FF">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="150dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/archivo_bold"
+                android:text="Edad"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@id/editText1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/cuadrotexto"
+                android:hint="Ingrese su edad"
+                android:inputType="number"
+                android:paddingLeft="20dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView1" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/archivo_bold"
+                android:text="Sexo"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@id/spinner2"
+                app:layout_constraintTop_toBottomOf="@id/editText1" />
+
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/cuadrotexto"
+                android:paddingLeft="20dp"
+                android:textColor = "@color/black"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView2" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/archivo_bold"
+                android:text="Tipo de dolor de pecho"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@id/spinner3"
+                app:layout_constraintTop_toBottomOf="@id/spinner2" />
+
+            <Spinner
+                android:id="@+id/spinner3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/cuadrotexto"
+                android:paddingLeft="15dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView3" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/archivo_bold"
+                android:text="Presion Arterial en reposo"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@id/editText4"
+                app:layout_constraintTop_toBottomOf="@id/spinner3" />
+
+            <EditText
+                android:id="@+id/editText4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/cuadrotexto"
+                android:hint="Ingrese su presion arterial en reposo"
+                android:paddingLeft="20dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView4"
+                android:inputType="number"/>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/archivo_bold"
+                android:text="Colesterol"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@id/editText5"
+                app:layout_constraintTop_toBottomOf="@id/editText4" />
+
+            <EditText
+                android:id="@+id/editText5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/cuadrotexto"
+                android:hint="Ingrese su colesterol en sangre"
+                android:paddingLeft="20dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView5"
+                android:inputType="number"/>
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/archivo_bold"
+                android:text="  Azucar en Sangre en ayunas"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@id/spinner6"
+                app:layout_constraintTop_toBottomOf="@id/editText5" />
+
+            <Spinner
+                android:id="@+id/spinner6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/cuadrotexto"
+                android:paddingLeft="15dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView6" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/archivo_bold"
+                android:text="Electrocardiograma en reposo"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@id/spinner7"
+                app:layout_constraintTop_toBottomOf="@id/spinner6" />
+
+            <Spinner
+                android:id="@+id/spinner7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/cuadrotexto"
+                android:paddingLeft="15dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView7" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/archivo_bold"
+                android:text="Frecuencia cardiaca maxima"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@id/editText8"
+                app:layout_constraintTop_toBottomOf="@id/spinner7" />
+
+            <EditText
+                android:id="@+id/editText8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/cuadrotexto"
+                android:paddingLeft="20dp"
+                android:hint="Ingrese su frecuencia cardiaca maxima"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView8"
+                android:inputType="number"/>
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/archivo_bold"
+                android:text="Angina inducida por el ejercicio"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@id/spinner9"
+                app:layout_constraintTop_toBottomOf="@id/editText8" />
+
+            <Spinner
+                android:id="@+id/spinner9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/cuadrotexto"
+                android:paddingLeft="15dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView9" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/archivo_bold"
+                android:text="Depresion en el segmento ST"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@id/editText10"
+                app:layout_constraintTop_toBottomOf="@id/spinner9" />
+
+            <EditText
+                android:id="@+id/editText10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/cuadrotexto"
+                android:hint="  Ingrese la depresion en el segmento ST"
+                android:paddingLeft="20dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView10"
+                android:inputType="numberDecimal"/>
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/archivo_bold"
+                android:text="Pendiente del segmento ST"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@id/spinner11"
+                app:layout_constraintTop_toBottomOf="@id/editText10" />
+
+            <Spinner
+                android:id="@+id/spinner11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/cuadrotexto"
+                android:paddingLeft="15dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textView11" />
+
+            <ImageButton
+                android:id="@+id/buttonRunModel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="#00FFFFFF"
+                android:src="@drawable/group_6"
+                android:text="Ejecutar modelo"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/spinner11" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/Sirena"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="45dp"
+        android:background="#00FFFFFF"
+        android:elevation="1dp"
+        android:src="@drawable/sirena"
+        app:layout_constraintEnd_toEndOf="@+id/Barra"
+        app:layout_constraintTop_toTopOf="@+id/Barra" />
+
+    <ImageButton
+        android:id="@+id/casa"
+        android:layout_width="72dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="8dp"
+        android:background="#00FFFFFF"
+        android:elevation="1dp"
+        android:src="@drawable/casa"
+        app:layout_constraintStart_toStartOf="@+id/Barra"
+        app:layout_constraintTop_toTopOf="@+id/Barra" />
+
+    <ImageButton
+        android:id="@+id/Agregar"
+        style="@style/Widget.AppCompat.ImageButton"
+        android:layout_width="0dp"
+        android:layout_height="91dp"
+        android:layout_marginEnd="132dp"
+        android:layout_marginBottom="28dp"
+        android:background="#00FFFFFF"
+        android:elevation="1dp"
+        android:src="@drawable/group_33739"
+        app:layout_constraintBottom_toBottomOf="@+id/Barra"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/Barra"
+        android:layout_width="411dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="2dp"
+        android:src="@drawable/rectangle_4239"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
